@@ -1,0 +1,32 @@
+.sidebarItem{
+  display: flex;
+  padding: 10px 0;
+  border-radius: 0 100px 100px 0;
+}
+
+
+.sidebarItem:hover{
+  background: rgb(233, 233, 233);
+}
+
+.sidebarItem__arrow{
+  width: 28px;
+  margin-left: 12px;
+}
+
+.sidebarItem__main{
+  display: flex;
+}
+.sidebarItem__main:active{
+  color: blue;
+}
+.sidebarItem__main>p {
+  margin-left: 12px;
+  font-size: 13px;
+  font-weight: 600;
+  color: rgb(95 99 104);
+}
+
+.sidebarItem__colorchange{
+  color:rgb(66 133 244);
+}

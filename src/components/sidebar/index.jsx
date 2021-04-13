@@ -2,12 +2,12 @@ import React from "react";
 import NewFile from "./NewFile";
 import SideBarItem from "./SideBarItem";
 
-import InsertDriveFileIcon from "@material-ui/icons/Storage";
-import ImportantDevicesIcon from "@material-ui/icons/Storage";
-import PeopleAltIcon from "@material-ui/icons/Storage";
-import QueryBuilderIcon from "@material-ui/icons/Storage";
-import StartBorderIcon from "@material-ui/icons/Storage";
-import DeleteOutlineIcon from "@material-ui/icons/Storage";
+import InsertDriveFileIcon from "@material-ui/icons/InsertDriveFile";
+import ImportantDevicesIcon from "@material-ui/icons/ImportantDevices";
+import PeopleAltIcon from "@material-ui/icons/PeopleAlt";
+import QueryBuilderIcon from "@material-ui/icons/QueryBuilder";
+import StarBorderIcon from "@material-ui/icons/StarBorder";
+import DeleteOutlineIcon from "@material-ui/icons/DeleteOutline";
 import StorageIcon from "@material-ui/icons/Storage";
 import "../../styles/Sidebar.css";
 
@@ -27,7 +27,7 @@ const Sidebar = () => {
         />
         <SideBarItem icon={<PeopleAltIcon />} label={"Shared with me"} />
         <SideBarItem icon={<QueryBuilderIcon />} label={"Recent"} />
-        <SideBarItem icon={<StartBorderIcon />} label={"Starred"} />
+        <SideBarItem icon={<StarBorderIcon />} label={"Starred"} />
         <SideBarItem icon={<DeleteOutlineIcon />} label={"Bin"} />
 
         <hr />

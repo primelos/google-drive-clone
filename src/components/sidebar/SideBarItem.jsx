@@ -1,21 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
-
+import '../../styles/SidebarItem.css'
 
 const SideBarItem = ({ arrow, icon, label }) => {
-  return (
-    <div className='sidebarItem'>
-      <div className="sidebarItem__arrow">
-        {arrow && (<ArrowRightIcon />)}
-      </div>
+  const [click, setClick] = useState(false)
 
-      <div className="sidebarItem__main">
+  const handleChange = () => {
+    setClick(!click)
+  }
+
+  return (
+    <div className="sidebarItem">
+      <div className="sidebarItem__arrow">{arrow && <ArrowRightIcon />}</div>
+
+      <div
+        className={`sidebarItem__main ${click ? "sidebarItem__colorchange" : ""}`}
+      >
         {icon}
-        <p>{label}</p>
+        <a onClick={handleChange}>{label}</a>
       </div>
-      
     </div>
-  )
+  );
 }
 
 export default SideBarItem
